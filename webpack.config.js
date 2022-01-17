@@ -9,6 +9,10 @@ module.exports = {
     publicPath: "/",
   },
   devServer: {
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
+    compress: true,
     port: 4000,
     historyApiFallback: true,
   },
@@ -18,17 +22,17 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
         test: /\.(js|jsx)$/,
-        use: ['babel-loader'],
+        use: ["babel-loader"],
         exclude: /node_modules/,
       },
       {
         test: /\.sass$/,
-        use: [
-          "style-loader", // 3. Inject styles into DOM
-          "css-loader", // 2. Turns css into commonjs
-          "sass-loader", // 1. Turns sass into css
-        ],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },

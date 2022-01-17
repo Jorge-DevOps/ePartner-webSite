@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-//import '../../styles/components/Layout.scss'
+import '../styles/sass/components/Layout.sass'
 import { Header, Footer } from '../components'
 
 const LayoutPage = ({ children }) => {
   return (
     <div className='Layout'>
       <Header />
-      <div className='Layout__Container'>
+      <div className='Layout-container'>
         {children}
       </div>
       <Footer />

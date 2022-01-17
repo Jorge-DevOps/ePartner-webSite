@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "builddev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -28,12 +29,13 @@
     "copy-webpack-plugin": "^10.0.0",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
     "sass": "^1.47.0",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.6.0"
+    "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",
