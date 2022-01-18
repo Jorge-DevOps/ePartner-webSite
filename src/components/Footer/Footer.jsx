@@ -1,10 +1,10 @@
 import React from "react";
 import "../../styles/sass/components/footer.sass";
 import "../../styles/sass/components/Styles.sass";
-import logo from "../../assets/images/partnervtex-logo.png";
-import facebook from "../../assets/images/facebook.png";
-import instagram from "../../assets/images/instagram.png";
-import linkedin from "../../assets/images/linkedin.png";
+import logo from "../../assets/images/footer/partnervtex-logo.png";
+import facebook from "../../assets/images/footer/facebook.png";
+import instagram from "../../assets/images/footer/instagram.png";
+import linkedin from "../../assets/images/footer/linkedin.png";
 
 const Footer = () => {
   return (

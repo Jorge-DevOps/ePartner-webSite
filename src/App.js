@@ -15,17 +15,12 @@ import {
   Empleo,
 } from "./pages";
 
-const site = () => (
-  <LayoutPage>
-    <div>site</div>
-  </LayoutPage>
-);
 function App() {
   return (
     <Router>
       <Switch>
         <LayoutPage>
-          <Redirect exact from="/" to="/home" />
+          <Redirect exact from="" to="/home" />
           <Route exact path="/home" component={Home} />
           <Route exact path="/nosotros" component={Nosotros} />
           <Route exact path="/partners" component={Partners} />

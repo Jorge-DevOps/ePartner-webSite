@@ -1,3 +1,7 @@
 export { Button } from './Globals/Button'
 export { Header } from './Globals/Header'
-export { Footer } from './Globals/Footer'
+export { Footer } from './Footer/Footer'
+export { CardBlog } from './Footer/CardBlog'
+export { Blog } from './Footer/Blog'
+export { ContactForm } from './Footer/ContactForm'
+export { Card } from './Globals/Card'
