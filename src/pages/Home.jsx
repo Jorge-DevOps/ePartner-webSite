@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Blog } from "../components";
+import { Card, Blog, ContactForm } from "../components";
 import Logo from "../assets/images/home/Logo.svg";
 import "../styles/sass/pages/Home.sass";
 import card1 from "../assets/images/home/image-card1-home.png";
@@ -53,6 +53,7 @@ const Home = () => {
       </section>
       <section className="extraFooter">
         <Blog/>
+        <ContactForm/>
       </section>
     </main>
   );
