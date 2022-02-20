@@ -7,3 +7,5 @@ export { ContactForm } from './Footer/ContactForm'
 export { Card } from './Globals/Card'
 export { Clientes } from './Home/Clientes'
 export { ClientesCard } from './Home/ClientesCard'
+export { BannerTop } from './Globals/BannerTop'
+
