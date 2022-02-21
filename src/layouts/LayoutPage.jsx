@@ -1,26 +1,26 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import '../styles/sass/components/Layout.sass'
-import { Header, Footer } from '../components'
+import React from "react";
+import PropTypes from "prop-types";
+import "../styles/sass/components/Layout.sass";
+import { Header, Footer } from "../components";
 
 const LayoutPage = ({ children }) => {
   return (
-    <div className='Layout'>
+    <section className="layout">
       <Header />
-      <div className='Layout-container'>
-        {children}
+      <div className="layout-container">
+        <main >{children}</main>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  )
-}
+    </section>
+  );
+};
 
 LayoutPage.defaultProps = {
   children: null,
-}
+};
 
 LayoutPage.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export { LayoutPage }
+export { LayoutPage };

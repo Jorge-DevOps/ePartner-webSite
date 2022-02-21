@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "app vainilla",
   "main": "src/index.js",
+  "homepage": "https://jorge-devops.github.io/ePartner-webSite",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode production",
     "builddev": "webpack --mode development",
     "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
-    "type": "git",
+    "type": "git",  
     "url": "git+https://github.com/Jorge-DevOps/SinglePageApplication.git"
   },
   "keywords": [
@@ -20,7 +23,6 @@
   "bugs": {
     "url": "https://github.com/Jorge-DevOps/SinglePageApplication/issues"
   },
-  "homepage": "https://github.com/Jorge-DevOps/SinglePageApplication#readme",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.8",
@@ -28,6 +30,7 @@
     "babel-loader": "^8.2.3",
     "copy-webpack-plugin": "^10.0.0",
     "css-loader": "^6.5.1",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
     "sass": "^1.47.0",
@@ -41,6 +44,7 @@
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "swiper": "^8.0.6"
   }
 }

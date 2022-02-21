@@ -32,6 +32,9 @@ function App() {
           <Route exact path="/contactenos" component={Contactenos} />
           <Route exact path="/servicios" component={Servicios} />
           <Route exact path="/empleo" component={Empleo} />
+          <Route exact path="/"
+            render={() => <Redirect to="/home" />}
+          />
         </LayoutPage>
       </Switch>
     </Router>

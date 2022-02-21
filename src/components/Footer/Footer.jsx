@@ -8,7 +8,7 @@ import linkedin from "../../assets/images/footer/linkedin.png";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer-page">
       <section className="footer">
         <article className="footer-article">
           <ul className="footer-article-list">
