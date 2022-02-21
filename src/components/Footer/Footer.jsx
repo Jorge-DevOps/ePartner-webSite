@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/sass/components/footer.sass";
+import "../../styles/sass/components/Footer.sass";
 import "../../styles/sass/components/Styles.sass";
 import logo from "../../assets/images/footer/partnervtex-logo.png";
 import facebook from "../../assets/images/footer/facebook.png";
